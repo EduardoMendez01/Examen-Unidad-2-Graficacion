@@ -1,7 +1,7 @@
 // Variables
 let paddle, ball, bricks = [];
 let rows, cols;
-let level = 3, score = 0, lives = 3;
+let level = 1, score = 0, lives = 3;
 let ballLaunched = false;
 let hitSound, bgMusic;
 let gameOver = false, gameWin = false;
