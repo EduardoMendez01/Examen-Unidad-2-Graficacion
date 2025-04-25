@@ -117,7 +117,7 @@ class Paddle {
     this.h = PADDLE_HEIGHT;
     //Funcion para centrar la pelota
     this.pos = createVector(width/2 - this.w/2, height - MARGIN);
-    //Velocidad de la pelota
+    //Velocidad de la base
     this.speed = 8;
   }
   display() { rect(this.pos.x, this.pos.y, this.w, this.h, 5); }
