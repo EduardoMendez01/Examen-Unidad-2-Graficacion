@@ -1,7 +1,7 @@
 // Variables
 let paddle, ball, bricks = [];
 let rows, cols;
-let level = 1, score = 0, lives = 3;
+let level = 3, score = 0, lives = 3;
 let ballLaunched = false;
 let hitSound, bgMusic;
 let gameOver = false, gameWin = false;
@@ -153,10 +153,10 @@ class Ball {
 
 // Niveles
 function initLevel(lv) {
-  //Aqui se definen los tamaños de los niveles (1,2,3)
-  if (lv === 1)      { rows = 3; cols = 7; ballSpeed = 4;  specialBlocks = []; }
-  else if (lv === 2) { rows = 5; cols = 9; ballSpeed = 5;  specialBlocks = [ floor(random(rows*cols)) ]; }
-  else               { rows = 6; cols = 11; ballSpeed = 6;
+  //Aqui se definen los tamaños de los niveles (1,2,3) junto con la velocidad dela pelota
+  if (lv === 1)      { rows = 3; cols = 7; ballSpeed = 5;  specialBlocks = []; }
+  else if (lv === 2) { rows = 5; cols = 9; ballSpeed = 7;  specialBlocks = [ floor(random(rows*cols)) ]; }
+  else               { rows = 6; cols = 11; ballSpeed = 9;
     let total = rows * cols;
     //Aqui son los bloques especiales
     specialBlocks = [];
