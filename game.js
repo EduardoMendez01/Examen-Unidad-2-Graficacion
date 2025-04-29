@@ -1,6 +1,7 @@
 // Variables
 let paddle, ball, bricks = [];
 let rows, cols;
+//Aqui se selecciona el nivel que quieres iniciar del 1 al 3, en caso de que quieras ver alguno en especifico
 let level = 1, score = 0, lives = 3;
 let ballLaunched = false;
 let hitSound, bgMusic;
@@ -153,7 +154,7 @@ class Ball {
 
 // Niveles
 function initLevel(lv) {
-  //Aqui se definen los tamaños de los niveles (1,2,3) junto con la velocidad dela pelota
+  //Aqui se definen los tamaños de los niveles(columnas y altura) (1,2,3) junto con la velocidad de la pelota
   if (lv === 1)      { rows = 3; cols = 7; ballSpeed = 5;  specialBlocks = []; }
   else if (lv === 2) { rows = 5; cols = 9; ballSpeed = 7;  specialBlocks = [ floor(random(rows*cols)) ]; }
   else               { rows = 6; cols = 11; ballSpeed = 9;
